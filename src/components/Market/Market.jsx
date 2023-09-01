@@ -24,7 +24,7 @@ const Market = () => {
     fetchData();
   }, [url]);
 
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 2; i++) {
     paginationButtons.push(
       <button
         key={i}
