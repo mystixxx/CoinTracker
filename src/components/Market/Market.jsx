@@ -4,6 +4,7 @@ import "./Market.scss";
 const Market = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState([]);
+  const [apiLoad, setApiLoad] = useState(true);
   const paginationButtons = [];
 
   const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${currentPage}&sparkline=false
@@ -55,7 +56,11 @@ const Market = () => {
                 <p>24h Change</p>
                 <p>Market Cap</p>
               </div>
-              <div className="market-content__coin-list__row">
+              <div
+                onLoad={() => setApiLoad(false)}
+                className="market-content__coin-list__row"
+              >
+                {apiLoad && <span className="loader"></span>}
                 {data.map((item) => (
                   <div className="coin-row" key={item.id}>
                     <span>
