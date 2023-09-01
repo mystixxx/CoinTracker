@@ -29,6 +29,9 @@
           font-family: Ubuntu;
           font-size: 80px;
           font-weight: 700;
+          @media (max-width: 768px) {
+            font-size: 40px;
+          }
           .coloring {
             color: #7781FF;
           }
@@ -36,6 +39,9 @@
         p {
           color: #797979;
           font-size: 20px;
+          @media (max-width: 768px) {
+            font-size: 10px;
+          }
         }
       }
       .col-2 {
@@ -62,7 +68,7 @@
       .content {
         grid-template-columns: 1fr;
         .col-1 {
-          height: 100vh;
+          height: 80vh;
         }
         .col-2 {
           display: none;
