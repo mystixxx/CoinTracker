@@ -49,15 +49,15 @@
       }
 
       @media (max-width: 768px) {
-        font-size: 16px; // Reduce font size for smaller screens
+        font-size: 16px; 
       }
   
       @media (max-width: 550px) {
-        font-size: 11px; // Further reduce font size for even smaller screens
+        font-size: 11px; 
       }
 
       @media (max-width: 450px) {
-        font-size: 10px; // Further reduce font size for even smaller screens
+        font-size: 10px; 
       }
     }
 
@@ -111,16 +111,16 @@
     transition: 0.3s all ease;
 
     @media (max-width: 768px) {
-      font-size: 16px; // Reduce font size for smaller screens
+      font-size: 16px;
     }
 
     @media (max-width: 550px) {
-      font-size: 11px; // Further reduce font size for even smaller screens
+      font-size: 11px;
       gap: 0.2rem;
     }
 
     @media (max-width: 450px) {
-      font-size: 10px; // Further reduce font size for even smaller screens
+      font-size: 10px;
     }
 
     &:hover {
